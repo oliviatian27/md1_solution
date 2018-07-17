@@ -21,8 +21,9 @@ function LunchCheckController($scope) {
       $scope.messagestyle={'color':'green'}
       if (lunch.length>3){
         $scope.message= 'Too much!';
-     }
+     } else{
         $scope.message='Enjoy!'
+     }
     }
   }
   
