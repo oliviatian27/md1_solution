@@ -17,9 +17,10 @@ function LunchCheckController($scope) {
       $scope.message= 'please enter you lunch first';
     } else{
       lunch=lunch.split(',').filter(x=>x);
+      var count=lunch.length;
       $scope.lunchstyle={'border-color':'green'};
       $scope.messagestyle={'color':'green'}
-      if (lunch.length>3){
+      if (count>3){
         $scope.message= 'Too much!';
      } else{
         $scope.message='Enjoy!'
